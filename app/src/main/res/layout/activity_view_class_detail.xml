@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_class_detail_coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
+    tools:context="ml.janewon.schoolhelper.ViewExamDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/activity_view_class_detail_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="32dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/activity_view_class_detail_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_view_class_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="36dp"
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                android:paddingBottom="24dp"
+                android:paddingEnd="32dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="32dp"
+                android:paddingStart="16dp"
+                android:paddingTop="24dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_view_class_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_place_black_24dp"
+                android:drawablePadding="36dp"
+                android:drawableStart="@drawable/ic_place_black_24dp"
+                android:paddingBottom="24dp"
+                android:paddingEnd="32dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="32dp"
+                android:paddingStart="16dp"
+                android:paddingTop="24dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_view_class_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_event_note_black_24dp"
+                android:drawablePadding="36dp"
+                android:drawableStart="@drawable/ic_event_note_black_24dp"
+                android:paddingBottom="24dp"
+                android:paddingEnd="32dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="32dp"
+                android:paddingStart="16dp"
+                android:paddingTop="24dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_view_class_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_schedule_black_24dp"
+                android:drawablePadding="36dp"
+                android:drawableStart="@drawable/ic_schedule_black_24dp"
+                android:paddingBottom="24dp"
+                android:paddingEnd="32dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="32dp"
+                android:paddingStart="16dp"
+                android:paddingTop="24dp"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/activity_view_class_divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#E0E0E0" />
+
+            <TextView
+                android:id="@+id/activity_view_class_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="24dp"
+                android:paddingEnd="32dp"
+                android:paddingLeft="80dp"
+                android:paddingRight="32dp"
+                android:paddingStart="80dp"
+                android:paddingTop="24dp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/activity_view_class_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_edit_white_24dp"
+        app:layout_anchor="@id/activity_view_class_detail_app_bar"
+        app:layout_anchorGravity="bottom|right|end" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_teacher_coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="ml.janewon.schoolhelper.AddTeacherActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/activity_add_teacher_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:minHeight="300dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_add_a_photo_black_36dp" />
+
+            <EditText
+                android:id="@+id/activity_add_teacher_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="32dp"
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                android:hint="@string/activity_add_teacher_name_hint"
+                android:inputType="textCapWords"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/activity_add_teacher_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:layout_marginStart="56dp"
+                android:background="@null"
+                android:hint="@string/activity_add_teacher_surname_hint"
+                android:inputType="textCapWords"
+                android:padding="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#E0E0E0" />
+
+            <TextView
+                android:id="@+id/activity_add_teacher_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_subject_black_24dp"
+                android:drawablePadding="32dp"
+                android:drawableStart="@drawable/ic_subject_black_24dp"
+                android:hint="@string/activity_add_teacher_subject_hint"
+                android:padding="16dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#E0E0E0" />
+
+            <EditText
+                android:id="@+id/activity_add_teacher_office"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_room_black_24dp"
+                android:drawablePadding="32dp"
+                android:drawableStart="@drawable/ic_room_black_24dp"
+                android:hint="@string/activity_add_teacher_office_hint"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/activity_add_teacher_office_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_schedule_black_24dp"
+                android:drawablePadding="32dp"
+                android:drawableStart="@drawable/ic_schedule_black_24dp"
+                android:hint="@string/activity_add_teacher_hours_hint"
+                android:padding="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#E0E0E0" />
+
+            <EditText
+                android:id="@+id/activity_add_teacher_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawablePadding="32dp"
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:hint="@string/activity_add_teacher_email_hint"
+                android:inputType="textEmailAddress"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/activity_add_teacher_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_call_black_24dp"
+                android:drawablePadding="32dp"
+                android:drawableStart="@drawable/ic_call_black_24dp"
+                android:hint="@string/activity_add_teacher_phone_hint"
+                android:inputType="phone"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/activity_add_teacher_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_home_black_24dp"
+                android:drawablePadding="32dp"
+                android:drawableStart="@drawable/ic_home_black_24dp"
+                android:hint="@string/activity_add_teacher_address_hint"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/activity_add_teacher_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_rss_feed_black_24dp"
+                android:drawablePadding="32dp"
+                android:drawableStart="@drawable/ic_rss_feed_black_24dp"
+                android:hint="@string/activity_add_teacher_website_hint"
+                android:inputType="textUri"
+                android:padding="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#E0E0E0" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

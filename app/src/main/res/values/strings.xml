@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">School Helper</string>
+    
+    <string name="shortcut_timetable_long_label">Timetable</string>
+    <string name="shortcut_timetable_short_label">Timetable</string>
+    <string name="shortcut_timetable_disabled_message">Timetable isn\'t available now</string>
+    <string name="shortcut_assignment_long_label">Assignments</string>
+    <string name="shortcut_assignment_short_label">Assignments</string>
+    <string name="shortcut_assignment_disabled_message">Assignments aren\'t available now</string>
+    <string name="shortcut_exam_long_label">Exams</string>
+    <string name="shortcut_exam_short_label">Exams</string>
+    <string name="shortcut_exam_disabled_message">Exams aren\'t available now</string>
+    
+    <string name="activity_add_subject_label">Add Subject</string>
+    <string name="activity_add_teacher_label">Add Teacher</string>
+    <string name="activity_view_class_label">Class Details</string>
+    <string name="activity_view_assignment_label">Assignment Details</string>
+    <string name="activity_view_exam_label">Exam Details</string>
+    <string name="activity_settings_label">Settings</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_today">Today</string>
+    <string name="action_day_view">Day view</string>
+    <string name="action_three_day_view">3 day view</string>
+    <string name="action_week_view">Week view</string>
+
+    <string name="activity_add_subject_name">Subject name</string>
+    <string name="activity_add_subject_color">Choose a color</string>
+
+    <string name="activity_add_teacher_name_hint">Name</string>
+    <string name="activity_add_teacher_surname_hint">Surname</string>
+    <string name="activity_add_teacher_subject_hint">Subject</string>
+    <string name="activity_add_teacher_office_hint">Office</string>
+    <string name="activity_add_teacher_hours_hint">Office hours</string>
+    <string name="activity_add_teacher_email_hint">Email</string>
+    <string name="activity_add_teacher_phone_hint">Phone number</string>
+    <string name="activity_add_teacher_address_hint">Address</string>
+    <string name="activity_add_teacher_website_hint">Website</string>
+
+    <string name="activity_add_assignment_label">Add Assignment</string>
+    <string name="activity_add_assignment_subject_hint">Select a subject</string>
+    <string name="activity_add_assignment_title_text">Title</string>
+    <string name="activity_add_assignment_detail_text">Detail</string>
+    <string name="activity_add_assignment_due_date">Due date</string>
+    <string name="activity_add_assignment_due_time">Due time</string>
+
+    <string name="activity_add_exam_label">Add Exam</string>
+    <string name="activity_add_exam_name">Name</string>
+    <string name="activity_add_exam_subject">Select a subject</string>
+    <string name="activity_add_exam_score">Score</string>
+    <string name="activity_add_exam_date">Date</string>
+    <string name="activity_add_exam_time_from">From</string>
+    <string name="activity_add_exam_time_to">To</string>
+    <string name="activity_add_exam_type">Exam type</string>
+    <string name="activity_add_exam_detail">Detail</string>
+
+    <string name="activity_add_to_timetable_label">Add Class</string>
+    <string name="activity_add_to_timetable_subject_hint">Select a subject</string>
+    <string name="activity_add_to_timetable_room_hint">Room</string>
+    <string name="activity_add_to_timetable_teacher_hint">Select a teacher</string>
+    <string name="activity_add_to_timetable_day_hint">Select a day</string>
+    <string name="activity_add_to_timetable_time_from_hint">From</string>
+    <string name="activity_add_to_timetable_time_to_hint">To</string>
+    <string name="activity_add_to_timetable_remarks_hint">Remarks</string>
+
+    <string name="fragment_overview_label">Overview</string>
+    <string name="fragment_timetable_label">Timetable</string>
+    <string name="fragment_assignments_label">Assignments</string>
+    <string name="fragment_exams_label">Exams</string>
+    <string name="fragment_subjects_label">Subjects</string>
+    <string name="fragment_teachers_label">Teachers</string>
+
+    <string name="fragment_exams_empty_view_text">Press \'+\' to add an exam.</string>
+
+    <string name="fragment_assignments_empty_view_text">Press \'+\' to add an assignment.</string>
+
+    <string name="fragment_subjects_empty_view_text">Press \'+\' to add a subject.</string>
+
+    <string name="fragment_teachers_empty_view_text">Press \'+\' to add a teacher.</string>
+
+    <string name="fragment_overview_classes">Classes</string>
+    <string name="fragment_overview_classes_empty_view">No class today! Go and play some games!</string>
+    <string name="fragment_overview_assignments">Assignments</string>
+    <string name="fragment_overview_assignments_empty_view">No assignment to be done today! Do something new!</string>
+    <string name="fragment_overview_exams">Exams</string>
+    <string name="fragment_overview_exams_empty_view">No exam today! Leave your study behind!</string>
+
+    <string name="fragment_subject_picker_text">Select a subject:</string>
+
+    <string name="fragment_class_info_dialog_view_details">View Details</string>
+    <string name="fragment_class_info_dialog_cancel">Cancel</string>
+
+    <string name="choose_an_action">Choose an action</string>
+    <string-array name="overview_fab_menu">
+        <item>Add Class</item>
+        <item>Add Assignment</item>
+        <item>Add Exam</item>
+        <item>Add Subject</item>
+        <item>Add Teacher</item>
+    </string-array>
+
+    <string name="settings_group_notification">Notification</string>
+    <string name="settings_notifications_switch">Notifications</string>
+    <string name="settings_notification_class_time">Class notification</string>
+    <string name="settings_notification_class_time_summary">30 minutes before class</string>
+    <string name="settings_notification_assignment_time">Assignment notification</string>
+    <string name="settings_notification_assignment_time_summary">30 minutes before assignment</string>
+    <string name="settings_notification_exam_time">Exam notification</string>
+    <string name="settings_notification_exam_time_summary">30 minutes before exam</string>
+
+    <string-array name="settings_notification_time_entries">
+        <item>15 minutes before</item>
+        <item>30 minutes before</item>
+        <item>1 hour before</item>
+        <item>2 hours before</item>
+        <item>3 hours before</item>
+        <item>6 hours before</item>
+        <item>12 hours before</item>
+    </string-array>
+
+    <string-array name="settings_notification_time_entry_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>360</item>
+        <item>720</item>
+    </string-array>
+
+</resources>

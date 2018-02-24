@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ml.janewon.schoolhelper">
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+        <activity
+            android:name=".AddSubjectActivity"
+            android:label="@string/activity_add_subject_label"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddTeacherActivity"
+            android:label="@string/activity_add_teacher_label"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ViewTeacherDetailActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddAssignmentActivity"
+            android:label="@string/activity_add_assignment_label"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ViewAssignmentDetailActivity"
+            android:label="@string/activity_view_assignment_label"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddExamActivity"
+            android:label="@string/activity_add_exam_label"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ViewExamDetailActivity"
+            android:label="@string/activity_view_exam_label"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <provider
+            android:name=".SchoolHelperProvider"
+            android:authorities="ml.janewon.schoolhelper"
+            android:exported="false" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="ml.janewon.schoolhelper.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".AddClassActivity"
+            android:label="@string/activity_add_to_timetable_label"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".CropImageActivity" />
+
+        <receiver
+            android:name=".BootCompleteReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".NotificationService"
+            android:exported="false" />
+
+        <activity
+            android:name=".ViewClassDetailActivity"
+            android:label="@string/activity_view_class_label"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".NotificationPendingService"
+            android:exported="false" />
+
+        <activity android:name=".SettingsActivity"
+            android:label="@string/activity_settings_label"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>

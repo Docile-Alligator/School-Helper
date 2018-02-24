@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_teacher_detail_coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="ml.janewon.schoolhelper.ViewTeacherDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/activity_view_teacher_detail_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="32dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/activity_view_teacher_detail_toolbar_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/activity_view_teacher_detail_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_view_teacher_office"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_room_black_24dp"
+                android:drawablePadding="36dp"
+                android:drawableStart="@drawable/ic_room_black_24dp"
+                android:paddingBottom="24dp"
+                android:paddingEnd="32dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="32dp"
+                android:paddingStart="16dp"
+                android:paddingTop="24dp"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/activity_view_teacher_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_subject_black_24dp"
+                android:drawablePadding="36dp"
+                android:drawableStart="@drawable/ic_subject_black_24dp"
+                android:paddingBottom="24dp"
+                android:paddingEnd="32dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="32dp"
+                android:paddingStart="16dp"
+                android:paddingTop="24dp"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/activity_view_teacher_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_call_black_24dp"
+                android:drawablePadding="36dp"
+                android:drawableStart="@drawable/ic_call_black_24dp"
+                android:paddingBottom="24dp"
+                android:paddingEnd="32dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="32dp"
+                android:paddingStart="16dp"
+                android:paddingTop="24dp"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/activity_view_teacher_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawablePadding="36dp"
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:paddingBottom="24dp"
+                android:paddingEnd="32dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="32dp"
+                android:paddingStart="16dp"
+                android:paddingTop="24dp"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/activity_view_teacher_office_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_schedule_black_24dp"
+                android:drawablePadding="36dp"
+                android:drawableStart="@drawable/ic_schedule_black_24dp"
+                android:paddingBottom="24dp"
+                android:paddingEnd="32dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="32dp"
+                android:paddingStart="16dp"
+                android:paddingTop="24dp"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/activity_view_teacher_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_home_black_24dp"
+                android:drawablePadding="36dp"
+                android:drawableStart="@drawable/ic_home_black_24dp"
+                android:paddingBottom="24dp"
+                android:paddingEnd="32dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="32dp"
+                android:paddingStart="16dp"
+                android:paddingTop="24dp"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/activity_view_teacher_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_rss_feed_black_24dp"
+                android:drawablePadding="36dp"
+                android:drawableStart="@drawable/ic_rss_feed_black_24dp"
+                android:paddingBottom="24dp"
+                android:paddingEnd="32dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="32dp"
+                android:paddingStart="16dp"
+                android:paddingTop="24dp"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/activity_view_teacher_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_edit_white_24dp"
+        app:layout_anchor="@id/activity_view_teacher_detail_app_bar"
+        app:layout_anchorGravity="bottom|right|end" />
+
+</android.support.design.widget.CoordinatorLayout>

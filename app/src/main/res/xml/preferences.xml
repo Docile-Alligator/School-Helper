@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/settings_group_notification">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="notifications_switch"
+            android:title="@string/settings_notifications_switch" />
+
+        <ListPreference
+            android:defaultValue="30"
+            android:key="notification_class_time"
+            android:title="@string/settings_notification_class_time"
+            android:summary="@string/settings_notification_class_time_summary"
+            android:entries="@array/settings_notification_time_entries"
+            android:entryValues="@array/settings_notification_time_entry_values"/>
+
+        <ListPreference
+            android:defaultValue="30"
+            android:key="notification_assignment_time"
+            android:title="@string/settings_notification_assignment_time"
+            android:summary="@string/settings_notification_assignment_time_summary"
+            android:entries="@array/settings_notification_time_entries"
+            android:entryValues="@array/settings_notification_time_entry_values"/>
+
+        <ListPreference
+            android:defaultValue="30"
+            android:key="notification_exam_time"
+            android:title="@string/settings_notification_exam_time"
+            android:summary="@string/settings_notification_exam_time_summary"
+            android:entries="@array/settings_notification_time_entries"
+            android:entryValues="@array/settings_notification_time_entry_values"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

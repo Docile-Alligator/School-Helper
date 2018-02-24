@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_to_timetable_coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="ml.janewon.schoolhelper.AddClassActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="ml.janewon.schoolhelper.AddClassActivity">
+
+            <TextView
+                android:id="@+id/activity_add_to_timetable_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_subject_black_24dp"
+                android:drawablePadding="32dp"
+                android:drawableStart="@drawable/ic_subject_black_24dp"
+                android:hint="@string/activity_add_to_timetable_subject_hint"
+                android:padding="16dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/activity_add_to_timetable_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="32dp"
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                android:hint="@string/activity_add_to_timetable_teacher_hint"
+                android:padding="16dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/activity_add_to_timetable_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_room_black_24dp"
+                android:drawablePadding="32dp"
+                android:drawableStart="@drawable/ic_room_black_24dp"
+                android:hint="@string/activity_add_to_timetable_room_hint"
+                android:padding="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#E0E0E0" />
+
+            <TextView
+                android:id="@+id/activity_add_to_timetable_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_event_note_black_24dp"
+                android:drawablePadding="32dp"
+                android:drawableStart="@drawable/ic_event_note_black_24dp"
+                android:hint="@string/activity_add_to_timetable_day_hint"
+                android:padding="16dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/activity_add_to_timetable_time_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_schedule_black_24dp"
+                android:drawablePadding="32dp"
+                android:drawableStart="@drawable/ic_schedule_black_24dp"
+                android:hint="@string/activity_add_to_timetable_time_from_hint"
+                android:padding="16dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/activity_add_to_timetable_time_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:hint="@string/activity_add_to_timetable_time_to_hint"
+                android:paddingBottom="16dp"
+                android:paddingEnd="16dp"
+                android:paddingLeft="72dp"
+                android:paddingRight="16dp"
+                android:paddingStart="72dp"
+                android:paddingTop="16dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#E0E0E0" />
+
+            <EditText
+                android:id="@+id/activity_add_to_timetable_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:hint="@string/activity_add_to_timetable_remarks_hint"
+                android:paddingBottom="16dp"
+                android:paddingEnd="16dp"
+                android:paddingLeft="72dp"
+                android:paddingRight="16dp"
+                android:paddingStart="72dp"
+                android:paddingTop="16dp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

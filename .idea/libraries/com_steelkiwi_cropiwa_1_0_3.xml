@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.steelkiwi:cropiwa-1.0.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/cropiwa-1.0.3.aar/409acfae3177fa936601a1f2c1095ec2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/cropiwa-1.0.3.aar/409acfae3177fa936601a1f2c1095ec2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.steelkiwi/cropiwa/1.0.3/b19744a5d0f9ece9de3ae9f54db6f9dd38f55340/cropiwa-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

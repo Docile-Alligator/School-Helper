@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ml.janewon.schoolhelper.TimeTableFragment" >
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/coordinator_layout_time_table_fragment">
+
+        <com.alamkanak.weekview.WeekView
+            android:id="@+id/weekView_timetable_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:eventTextColor="@android:color/white"
+            app:textSize="12sp"
+            app:hourHeight="60dp"
+            app:headerColumnPadding="8dp"
+            app:headerColumnTextColor="@color/colorAccent"
+            app:headerRowPadding="12dp"
+            app:hourSeparatorColor="@android:color/white"
+            app:columnGap="8dp"
+            app:overlappingEventGap="1dp"
+            app:eventCornerRadius="2dp"
+            app:showNowLine="true"
+            app:nowLineColor="@color/colorAccent"
+            app:noOfVisibleDays="3"
+            app:headerRowBackgroundColor="#554FC3F7"
+            app:dayBackgroundColor="#55E0E0E0"
+            app:todayBackgroundColor="#554FC3F7"
+            app:headerColumnBackground="#ffffffff"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_time_table_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            app:srcCompat="@drawable/ic_add_white_24dp" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

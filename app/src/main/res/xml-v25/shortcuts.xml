@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="timetable"
+        android:enabled="true"
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:shortcutShortLabel="@string/shortcut_timetable_short_label"
+        android:shortcutLongLabel="@string/shortcut_timetable_long_label"
+        android:shortcutDisabledMessage="@string/shortcut_timetable_disabled_message">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="ml.janewon.schoolhelper"
+            android:targetClass="ml.janewon.schoolhelper.MainActivity">
+
+            <extra android:name="fragmentToOpen" android:value="timetable"/>
+
+        </intent>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="assignments"
+        android:enabled="true"
+        android:icon="@drawable/ic_assignment_black_24dp"
+        android:shortcutShortLabel="@string/shortcut_assignment_short_label"
+        android:shortcutLongLabel="@string/shortcut_assignment_long_label"
+        android:shortcutDisabledMessage="@string/shortcut_assignment_disabled_message">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="ml.janewon.schoolhelper"
+            android:targetClass="ml.janewon.schoolhelper.MainActivity">
+
+            <extra android:name="fragmentToOpen" android:value="assignments"/>
+
+        </intent>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="exams"
+        android:enabled="true"
+        android:icon="@drawable/ic_school_black_24dp"
+        android:shortcutShortLabel="@string/shortcut_exam_short_label"
+        android:shortcutLongLabel="@string/shortcut_exam_long_label"
+        android:shortcutDisabledMessage="@string/shortcut_exam_disabled_message">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="ml.janewon.schoolhelper"
+            android:targetClass="ml.janewon.schoolhelper.MainActivity">
+
+            <extra android:name="fragmentToOpen" android:value="exams"/>
+
+        </intent>
+    </shortcut>
+</shortcuts>

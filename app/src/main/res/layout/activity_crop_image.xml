@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ml.janewon.schoolhelper.CropImageActivity">
+
+        <com.steelkiwi.cropiwa.CropIwaView
+            android:id="@+id/activity_crop_image_crop_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:ci_scale_enabled="false"
+            app:ci_translation_enabled="false"
+            app:ci_draw_grid="false"
+            app:ci_overlay_color="#80FFFFFF"
+            app:ci_max_scale="1" />
+
+</LinearLayout>
